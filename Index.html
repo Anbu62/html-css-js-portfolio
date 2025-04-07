@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anbazhagan Selvam - Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anbazhagan Selvam</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anbazhagan Selvam</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#tools" onclick="toggleMenu()">Tools</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile pic3.png" alt="Anbu profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Anbazhagan Selvam</h1>
+            <p class="section__text__p2">Visual Designer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-2.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/anbazhagan-selvam-b9b54a115?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'">
+                <img src="./assets/free-behance-icon-2161-thumb.png" alt="Behance" class="icon" onclick="location.href='https://www.behance.net/anbazhagan48'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Untitled-1s.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience" class="icon">
+                        <h3>Experience</h3>
+                        <p>5+ years<br>Product Modeller</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Electronics and Telecommunication Engineering<br>Advance Visual Effects</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Enthusiastic and skilled 3D Designer with Over 5+ Years of hands on experience in the dynamic field of product design process, from conceptual sketching to product modeling, UX/UI, Packaging design, Design Branding, and Visual merchandising. Committed to staying current with industry trends and advancements Integrating emerging technologies to enhance project outcomes.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <h1 class="title">Work Experience</h1>
+        <div class="experience-container">
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Visual Designer</div>
+                    <div class="job-date">2021-03 to Current</div>
+                </div>
+                <div class="job-company">RR DONNELLEY - Chennai</div>
+                <div class="job-description">
+                    <p>• Worked with Amazon pipeline to generate product AR/VR models for Amazon website.</p>
+                    <p>• Conducted modelling and texturing optimization for real time 3D application.</p>
+                    <p>• Interpreted concept art and sketches to create innovative virtual concept solution for US retail market.</p>
+                    <p>• Playing a pivoted role as product designer for packaging Apple products.</p>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Visual Designer</div>
+                    <div class="job-date">2019-06 to 2020-11</div>
+                </div>
+                <div class="job-company">FROQ BRAND SERVICE - Chennai</div>
+                <div class="job-description">
+                    <p>• Generating food packaging realistic render using Maxon C4D for Albert Heijn website.</p>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">3D Artist</div>
+                    <div class="job-date">2018-12 to 2019-05</div>
+                </div>
+                <div class="job-company">SUTHERLAND GLOBAL SERVICES - Chennai</div>
+                <div class="job-description">
+                    <p>• Led the creation of high quality 3D models for a diverse range of products featured on the company's shopping website, ensuring consistency with brand aesthetics and visual standards.</p>
+                    <p>• Collaborated closely with the marketing and e-commerce teams to understand product specification and requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <h1 class="title">Software Proficiency</h1>
+        <div class="tools-grid">
+            <div class="tool-box">
+                <h3>3ds Max</h3>
+                <p class="skill-level">Experienced</p>
+            </div>
+            <div class="tool-box">
+                <h3>Cinema 4D</h3>
+                <p class="skill-level">Experienced</p>
+            </div>
+            <div class="tool-box">
+                <h3>Blender</h3>
+                <p class="skill-level">Experienced</p>
+            </div>
+            <div class="tool-box">
+                <h3>Figma</h3>
+                <p class="skill-level">Intermediate</p>
+            </div>
+            <div class="tool-box">
+                <h3>Unreal Engine</h3>
+                <p class="skill-level">Intermediate</p>
+            </div>
+            <div class="tool-box">
+                <h3>Adobe Photoshop</h3>
+                <p class="skill-level">Experienced</p>
+            </div>
+            <div class="tool-box">
+                <h3>NX Siemens</h3>
+                <p class="skill-level">Intermediate</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <!-- Project 1 - Heineken -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project-1 Heineken.jpg" alt="Heineken Project" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Heineken Project</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/portfolio/editor?project_id=223101469'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 2 - Air Selfie -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project 2 - air selfie.jpg" alt="Air Selfie Project" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Air Selfie</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/223102353/Air-selfie?'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 3 - Air Pod Animation -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project 3.png" alt="Air Pod Animation" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Air Pod Animation</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/223102611/Air-pod-Animation?'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 4 - Gaming Chair -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project-4 Gaming chair.jpg" alt="Gaming Chair Project" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Gaming Chair</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/223103685/Gaming-chair?'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 5 - Apple Watch Animation -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/apple watch animation.png" alt="Apple Watch Animation" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Apple Watch Animation</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/195320793/Apple-motion-graphics'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 6 - AH Food Packaging -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project -6.jpg" alt="AH Food Packaging" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">AH Food Packaging</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/223104359/Albert-Heijn-packaging-render?'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 7 - Food Box UX/UI -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project-8.png" alt="Food Box UX/UI" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Food Box UX/UI</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/223105841/Food-box-UXUI-Case-study'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 8 - Kitchen Visualization -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Project-9.png" alt="Kitchen Visualization" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Kitchen Visualization</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/62720779/Sketchup-Design'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 9 - Aida Visualization -->
+            <div class="project-container color-container">
+                <div class="project-img-container">
+                    <img src="./assets/Aida Visualization.png" alt="Aida Visualization" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Aida Visualization</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/58321309/Living-Room-Interior'">
+                        Behance
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+                        </button>
+                    </div>
+                </div>
+                        </button>
+                    </div>
+                </div>
+                            
+                                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:Anbazhagananbu717@gmail.com">Anbazhagananbu717@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="LinkedIn icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/anbazhagan-selvam-b9b54a115?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="copyright">Copyright &#169; 2025 Anbazhagan Selvam. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            const hamburgerIcon = document.querySelector('.hamburger-icon');
+            menuLinks.classList.toggle('open');
+            hamburgerIcon.classList.toggle('open');
+        }
+        
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
